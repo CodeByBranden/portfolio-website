@@ -1,82 +1,82 @@
-/* Base Styles */
+/* Dracula Color Scheme */
+:root {
+    --background: #282a36;
+    --current-line: #44475a;
+    --selection: #44475a;
+    --foreground: #f8f8f2;
+    --comment: #6272a4;
+    --cyan: #8be9fd;
+    --green: #50fa7b;
+    --orange: #ffb86c;
+    --pink: #ff79c6;
+    --purple: #bd93f9;
+    --red: #ff5555;
+    --yellow: #f1fa8c;
+}
+
 body {
-    background-color: #121212; /* Dark background */
-    color: #e0e0e0; /* Light text color */
-    font-family: Arial, sans-serif;
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: 'Fira Code', monospace;
+    /* You can choose another font */
+    line-height: 1.6;
 }
 
 a {
-    color: #00afe4; /* Accent color for links */
+    color: var(--cyan);
     text-decoration: none;
 }
 
 a:hover {
-    text-decoration: underline; /* Underline on hover */
+    color: var(--purple);
 }
 
-/* Header */
-header {
-    background-color: #1e1e1e; /* Darker header */
-    padding: 10px;
-    border-bottom: 2px solid #00afe4; /* Accent border */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--red);
 }
 
-/* Navigation */
-nav {
-    background-color: #1e1e1e;
-    padding: 10px;
+p {
+    color: var(--foreground);
 }
 
-nav a {
-    margin: 0 10px;
+header,
+footer {
+    background-color: var(--current-line);
+    padding: 1rem;
 }
 
-/* Buttons */
 .button {
-    background-color: #00afe4; /* Accent button color */
-    color: #ffffff; /* Button text color */
+    background-color: var(--purple);
+    color: var(--foreground);
+    padding: 0.5rem 1rem;
     border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
+    border-radius: 4px;
     cursor: pointer;
 }
 
 .button:hover {
-    background-color: #008bb3; /* Darker shade on hover */
+    background-color: var(--pink);
 }
 
-/* Cards */
-.card {
-    background-color: #1e1e1e; /* Card background */
-    border: 1px solid #333; /* Border color */
-    border-radius: 8px;
-    padding: 20px;
-    margin: 15px 0;
-}
-
-/* Form Elements */
-input, textarea {
-    background-color: #2a2a2a; /* Dark input background */
-    color: #ffffff; /* Light text color */
-    border: 1px solid #444; /* Input border */
+input,
+textarea {
+    background-color: var(--current-line);
+    color: var(--foreground);
+    border: 1px solid var(--comment);
+    padding: 0.5rem;
     border-radius: 4px;
-    padding: 10px;
-    width: 100%;
 }
 
-input:focus, textarea:focus {
-    border-color: #00afe4; /* Accent border on focus */
-    outline: none; /* Remove default outline */
+input:focus,
+textarea:focus {
+    border-color: var(--cyan);
+    outline: none;
 }
-
-/* Footer */
-footer {
-    background-color: #1e1e1e;
-    color: #aaaaaa; /* Footer text color */
-    padding: 10px;
-    text-align: center;
-}
-
 .logo {
     width: 5rem;
 }
