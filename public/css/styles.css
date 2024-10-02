@@ -3,3 +3,15 @@ body {
     color: white;
     font-family: -apple-system, system-ui, sans-serif;
 }
+
+/* Navigation */
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-header img {
+    width: 5rem;
+    margin: 10px 10px;
+}

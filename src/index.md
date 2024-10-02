@@ -1,6 +1,6 @@
 ---
 title: "Branden's Portfolio Website"
-layout: "base.html"
+layout: "layouts/base.html"
 ---
 
 # Hi, I'm Branden
