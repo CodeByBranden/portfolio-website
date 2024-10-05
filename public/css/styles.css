@@ -50,6 +50,15 @@ footer {
     padding: 1rem;
 }
 
+header {
+    display: flex;
+    justify-content: space-between;
+    /* Space between logo and nav */
+    align-items: center;
+    /* Center items vertically */
+    padding: 1rem;
+}
+
 .button {
     background-color: var(--purple);
     color: var(--foreground);
@@ -77,13 +86,31 @@ textarea:focus {
     border-color: var(--cyan);
     outline: none;
 }
+
 .logo {
     width: 5rem;
+    margin: 1.5rem 0 0 0;
 }
 
-.nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+nav {
+    padding: 1rem;
+}
+
+nav ul {
     list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1rem;
+}
+
+nav ul li a {
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    text-decoration: none;
+    color: var(--cyan);
+}
+
+nav ul li.active a {
+    text-decoration: underline;
 }

@@ -1,6 +1,6 @@
 <nav>
     <ul class="nav">
-        <li><a href="/">Home</a></li>
-        <li><a href="/about">About</a></li>
+        <li {% if pageId == "home" %}class="active"{% endif %}><a href="/">Home</a></li>
+        <li {% if pageId == "about" %}class="active"{% endif %}><a href="/about">About</a></li>
     </ul>
 </nav>

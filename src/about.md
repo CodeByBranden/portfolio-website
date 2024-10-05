@@ -1,6 +1,7 @@
 ---
 title: "Branden's Portfolio Website - About"
 layout: "layouts/base.html"
+pageId: "about"
 ---
 # About me
 
